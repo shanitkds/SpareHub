@@ -24,7 +24,7 @@ urlpatterns=[
     path('payment_root',views.payment_root,name='payment_root'),
     path('payment_root_id/<int:id>',views.payment_root,name='payment_root_id'),
     path('Profile/',views.profile,name='Profile'),
-    path('profileUpdate/<int:id>',views.profileupdate,name='profileUpdate'),
+    path('profileUpdate/',views.profileupdate,name='profileUpdate'),
     path('myorder/',views.myordars,name='myorder'),
     
     

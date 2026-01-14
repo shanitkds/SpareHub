@@ -313,7 +313,7 @@ def profile(request):
     return render(request,'Profile.html')
 
 @login_required
-def profileupdate(request,id):
+def profileupdate(request):
     user = request.user
     userInfo=Registration(request.POST or None,instance=user)
     if request.method=='POST':
