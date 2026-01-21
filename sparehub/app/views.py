@@ -23,7 +23,7 @@ def registration(request):
     if request.method=='POST' and form.is_valid():
         form.save()
         messages.success(request,"Registration successful! Please login.")
-        return redirect("login")
+        return redirect("account_login")
     return render(request,'Register.html',{'form':form})
 
 def login_view(request):

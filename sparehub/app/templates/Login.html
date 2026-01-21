@@ -2,6 +2,7 @@
 {% block title %}Login{% endblock title %}
 
 {% block content %}
+{% load socialaccount %}
 
 <body class="min-h-screen bg-gradient-to-b from-black via-[#1A0505] to-[#0B0B0B]">
 
@@ -28,6 +29,9 @@
                    hover:scale-105 hover:shadow-[0_0_20px_rgba(127,29,29,0.6)]">
                 Login
             </button>
+            <a href="{% provider_login_url 'google' %}">
+                Login with Google
+            </a>
             <div class="text-center mt-4">
                 <p class="text-gray-600 text-sm">
                     If not registered,
